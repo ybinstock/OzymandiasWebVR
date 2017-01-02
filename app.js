@@ -5,7 +5,6 @@ $(document).ready(function() {
   var head = document.querySelector('#head');
   var text = document.querySelector('#text');
 
-
   //to transition to end scene
   function activateScene2() {
     document.querySelector('#trader').emit('fade');
@@ -27,14 +26,12 @@ $(document).ready(function() {
   setTimeout(activateScene4, 38000);
 
   function activateScene5() {
-    document.querySelector('#legs').emit('fade');
-    document.querySelector('#head').emit('fade');
-    document.querySelector('#text').emit('fade');
+    $(".legs").attr('visible', 'false');
+    $(".head").attr('visible', 'false');
+    $(".text").attr('visible', 'false');
 
   }
 
   setTimeout(activateScene5, 50000);
-
-
 
 });
